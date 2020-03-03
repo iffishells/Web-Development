@@ -1,0 +1,80 @@
+.Heading
+{
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+.Information
+{
+    text-align: center;
+    
+}
+.Heading02
+{
+    text-align: center;
+    text-decoration-color:black;
+    color: blue;
+    text-align-last: inherit;
+    
+}
+.table th,td
+{
+    border: 1px solid black;
+    margin: 10px 5px 5px 5px;
+    text-align: center;
+    
+    
+}
+.table th
+{
+    width: 12rem;
+    font-size: 15px;
+    font: italic;
+    padding: 15px;
+}
+.table table{
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.table tr:hover
+{
+    color: blue;
+}
+.center
+{
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 600px;
+    margin-left: 200px;
+}
+.from input[type=text], select
+{
+
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0px;
+    display: inline;
+    border: 1px solid red;
+    
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.from input[type=submit]
+{
+    width: 100%;
+    color: red;
+    background-color:pink;
+    text-align: center;
+    font-size: 20px;
+    display: ruby-base;
+}
+.from div
+{
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 20px 20px ;
+    background-color: blue;
+}
+

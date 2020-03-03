@@ -1,0 +1,23 @@
+.flex-box
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+h1{
+    font-size: 25px;
+    border-bottom: 2px solid purple;
+    width: 250px;
+    border-right: 2px solid black;
+    text-align: center;
+}
+
+img
+{
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
