@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>change color fuction</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-<h1 id="firstchange">when click on the button then change the color</h1>
+
+<head>
+  <meta charset="utf-8">
+  <title>change color fuction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="firstchange">when click on the button then change the color</h1>
   <li>
     <ul>
       <button type="button" onclick="changecolor()" name="google">goole</button>
     </ul>
     <ul>
-      <button type="button" name="Facebook">Facebook</button>
+      <button type="button" id="facebook" onclick="changecolorfacebook()" name="Facebook">Facebook</button>
+      <h1 id="facebook-hidding"> This is just a Hiding whose change color when someone click on the Facebook Button</h1>
+      </h1>
     </ul>
     <ul>
       <button type="button" name="gmail">Gmail</button>
     </ul>
+
   </li>
 
-  <script  type="text/javascript">
-  function changecolor()
-  {
-    window.alert("Hy Bey!")
-    document.getElementById("firstchange").innerHTML = "Hellow world";
+  <button type="button" name="button">Blah</button>
 
-  }
+  <script type="text/javascript">
+    function changecolor() {
+      window.alert("Hy Bey!")
+      document.getElementById("firstchange").innerHTML = "Hellow world";
 
+    }
+
+    function changecolorfacebook() {
+      var ret = document.getElementById("facebook-hidding").style.color = "red";
+      console.log(ret);
+    }
+
+
+    var class_list_elements = document.querySelector("button").classList;
+    console.log("its time to leave now")
+    window.alert(class_list_elements)
   </script>
-  </body>
+</body>
+
 </html>
