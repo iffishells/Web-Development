@@ -1,0 +1,39 @@
+body
+{
+  background-color: #092532;
+}
+.Main_title
+{
+  border: .5rem solid black;
+}
+#Dice_Game{
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 5rem;
+  font-variant: small-caps;
+
+}
+#dice
+{
+  height: 5rem;
+}
+.rotation-dice
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+#rotation-dice-below
+{
+  padding-top: 10rem;
+}
+#start , #stop
+{
+  height: 5rem;
+  width: 20rem;
+
+}

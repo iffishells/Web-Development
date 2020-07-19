@@ -1,0 +1,30 @@
+body
+{
+  background-color: #ffc7c7;
+}
+#main_heading
+{
+  text-align: center;
+  background-color: red;
+  font-family: sans-serif;
+  border: 1rem solid black;
+  border-radius: 10rem;
+}
+#images_handle
+{
+  height: 10rem;
+  border: 1rem solid red;
+  border-radius: 20rem;
+}
+.container
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-column-gap: 10px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  border: 1rem solid black;
+  padding-right: 10px;
+  padding-left: 20px;
+
+}
