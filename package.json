@@ -1,0 +1,23 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "Zero to Mastery So I am starting the web Development from zero to Mastery",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iffishells/Web-Development.git"
+  },
+  "author": "iffishells",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iffishells/Web-Development/issues"
+  },
+  "homepage": "https://github.com/iffishells/Web-Development#readme"
+}
