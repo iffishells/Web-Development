@@ -1,3 +1,7 @@
 body{
   background-color: red;
 }
+#current_date
+{
+  border: 1rem solid black;
+}

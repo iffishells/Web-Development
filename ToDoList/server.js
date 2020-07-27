@@ -6,42 +6,32 @@ const ejs = require('ejs');
 app.use(express.static(path.join(__dirname, 'public'))); //static files
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs") // for setting to ejs tempalte
+//global variable
+var set_items
 
+const option = {
+  weekday : "long" ,
+  year : 'numeric',
+  month : "long" ,
+  day : "numeric"
+}
 app.get("/", function(req, resp) {
+
   var date = new Date()
-  CurrentDay = date.getDay()
-  var day = ""
-  if (CurrentDay == 0) {
-    day = "Monday"
 
-  }
-  if (CurrentDay == 1) {
-    day = "Tuesday"
+  CurrentDate = date.toLocaleDateString('en-US',option)
 
-  }
-  if (CurrentDay == 2) {
-    day = "Wednessday"
-
-  }
-  if (CurrentDay == 3) {
-    day = "thursday"
-
-  }
-  if (CurrentDay == 4) {
-    day = "friday"
-
-  }
-  if (CurrentDay == 5) {
-    day = "Sturday"
-  }
-  if (CurrentDay == 6) {
-    day = "Sunday"
-  }
-
-  resp.render("list", {kingOfDay: day})
+  console.log("root has been called");
+  resp.render("list", {kingOfDay: CurrentDate ,
+                        newitem : set_items} )
 });
 
-// app.post("/", function(req, resp) {});
+app.post("/", function(req, resp) {
+  console.log("root post has been called");
+   set_items = req.body.set_items
+   console.log(set_items);
+    resp.redirect("/")
+});
 
 app.listen(3000, function(req, resp) {
   console.log("your's  is listen at 3000 ports");
