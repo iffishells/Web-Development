@@ -3,12 +3,15 @@ const app = express();
 const path = require("path")
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
+// const ejsLint = require('ejs-lint');
+
 app.use(express.static(path.join(__dirname, 'public'))); //static files
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"))
 app.set("view engine", "ejs") // for setting to ejs tempalte
 //global variable
-var set_items
-
+var set_items_list = ["food" , "cook food" , "eat Code"]
+let NewOne
 const option = {
   weekday : "long" ,
   year : 'numeric',
@@ -23,13 +26,13 @@ app.get("/", function(req, resp) {
 
   console.log("root has been called");
   resp.render("list", {kingOfDay: CurrentDate ,
-                        newitem : set_items} )
+                        newitem : set_items_list} )
 });
 
 app.post("/", function(req, resp) {
   console.log("root post has been called");
-   set_items = req.body.set_items
-   console.log(set_items);
+    NewOne  = req.body.set_items
+   set_items_list.push(NewOne)
     resp.redirect("/")
 });
 

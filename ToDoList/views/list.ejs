@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>ToDoList</title>
-  <link rel="stylesheet" type="/text/css" href=" ../public/css/style.css">
+  <link rel="stylesheet"  href="css/style.css">
 </head>
 
 <body>
@@ -12,13 +12,17 @@
 
   <form action="/" method="post">
     <ul>
-      <li>Buy food</li>
+        <% for (var i = 0; i < newitem.length; i++) { %>
+          <li><%= newitem[i] %> </li>
+
+      <%  } %>
+      <!-- <li>Buy food</li>
       <li>Cook Food</li>
       <li>Eat Food</li>
-      <li><%= newitem %> </li>
+      <li><%= newitem %> </li> -->
     </ul>
   <input type="text" name="set_items" >
-  <button type="button" name="Add">ADD</button>
+  <button type="submit" name="Add">ADD</button>
   </form>
 
 </body>
