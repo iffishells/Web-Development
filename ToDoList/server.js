@@ -1,14 +1,10 @@
-//jshhint esversion:6
 
 const express = require("express");
 const app = express();
 const path = require("path")
 const bodyParser = require('body-parser');
 const ejs = require('ejs');
-const current_date = require(__dirname + "/date.js")
 // const ejsLint = require('ejs-lint');
-// console.log(current_date);
-
 
 app.use(express.static(path.join(__dirname, 'public'))); //static files
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,22 +13,21 @@ app.set("view engine", "ejs") // for setting to ejs tempalte
 //global variable
 var set_items_list = ["food" , "cook food" , "eat Code"]
 let NewOne
-// const option = {
-//   weekday : "long" ,
-//   year : 'numeric',
-//   month : "long" ,
-//   day : "numeric"
-// }
+
 app.get("/", function(req, resp) {
+  const option = {
+    weekday : "long" ,
+    year : 'numeric',
+    month : "long" ,
+    day : "numeric"
+  }
+   var date = new Date()
 
-  // var date = new Date()
-  //
-  // CurrentDate = date.toLocaleDateString('en-US',option)
-  //
-  // console.log("root has been called");
+   CurrentDate = date.toLocaleDateString('en-US',option)
 
-   // resp.render("list", {kingOfDay: CurrentDate ,
-   //                       newitem : set_items_list} )
+   console.log("root has been called");
+   resp.render("list", {kingOfDay: CurrentDate ,
+                         newitem : set_items_list} )
 });
 
 app.post("/", function(req, resp) {
