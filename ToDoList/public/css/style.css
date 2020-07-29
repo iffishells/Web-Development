@@ -1,6 +1,6 @@
 body {
-  background: rgb(121,80,9);
-background: linear-gradient(90deg, rgba(121,80,9,1) 7%, rgba(36,0,1,0.4962359943977591) 7%, rgba(235,101,12,1) 7%, rgba(184,34,220,1) 54%, rgba(0,212,255,1) 62%);
+  background: rgb(121, 80, 9);
+  background: linear-gradient(90deg, rgba(121, 80, 9, 1) 7%, rgba(36, 0, 1, 0.4962359943977591) 7%, rgba(235, 101, 12, 1) 7%, rgba(184, 34, 220, 1) 54%, rgba(0, 212, 255, 1) 62%);
 }
 
 #current_date {
@@ -34,8 +34,10 @@ background: linear-gradient(90deg, rgba(121,80,9,1) 7%, rgba(36,0,1,0.4962359943
   /* padding: 1rem 1rem 1rem 1rem  ; */
 }
 
-#enterdolist {
+#enterdolist , #add_button {
   margin-left: 1rem;
+  border: 2px solid black;
+  border-radius: 20rem;
 }
 
 #inside__list {
