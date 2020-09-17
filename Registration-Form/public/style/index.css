@@ -1,7 +1,15 @@
 body{
-    background-color: pink;
+    background-color: #111d5e;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
 }
-#css
+.form-container
 {
-    background-color: red;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10rem 10rem 10rem 5rem; 
+    width: 50%;
+    height: auto;
+    
 }
